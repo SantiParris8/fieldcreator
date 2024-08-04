@@ -10,7 +10,7 @@ IS_HEROKU = "DYNO" in os.environ
 SECRET_KEY = os.environ.get('SECRET_KEY', 'LOCAL')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG') == '1'
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 THUMBNAIL_DEBUG = DEBUG
 
