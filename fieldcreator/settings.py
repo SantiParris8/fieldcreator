@@ -107,7 +107,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 SALESFORCE_CONSUMER_KEY = os.environ.get('SALESFORCE_CONSUMER_KEY')
 SALESFORCE_CONSUMER_SECRET = os.environ.get('SALESFORCE_CONSUMER_SECRET')
 SALESFORCE_REDIRECT_URI = 'https://fieldcreator.onrender.com/oauth_response'
-SALESFORCE_API_VERSION = int(os.environ.get('SALESFORCE_API_VERSION', 55))
+SALESFORCE_API_VERSION = int(55)
 
 # EMAIL SERVER SETTINGS
 EMAIL_HOST = os.environ.get('EMAIL_HOST')
