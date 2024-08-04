@@ -15,7 +15,7 @@ TEMPLATE_DEBUG = DEBUG
 THUMBNAIL_DEBUG = DEBUG
 
 ADMINS = (
-    ('Ben Edwards', 'ben@edwards.nz'),
+    ('Santiago Parris', 'santiiparris@gmail.com'),
 )
 
 if IS_HEROKU:
