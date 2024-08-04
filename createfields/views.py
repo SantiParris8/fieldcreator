@@ -29,7 +29,7 @@ def index(request):
 
 			# Get Production or Sandbox value
 			environment = login_form.cleaned_data['environment']
-			environment = 'uwu'
+			environment = 'Production'
 
 			# URL to send login request
 			oauth_url = 'https://login.salesforce.com/services/oauth2/authorize'
@@ -66,6 +66,7 @@ def oauth_response(request):
 		# Get OAuth response  values
 		oauth_code = request.GET.get('code')
 		environment = request.GET.get('state')
+		environment = 'Production'
 		access_token = ''
 		instance_url = ''
 
